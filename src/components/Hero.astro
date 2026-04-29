@@ -1,0 +1,36 @@
+---
+import { SITE } from '../config';
+---
+
+<section id="hero" class="bg-[#111] px-7 py-16 relative overflow-hidden">
+  <p class="text-xs uppercase tracking-[3px] text-[#ff4d00] mb-3">
+    {SITE.location} · Mobile &amp; Workshop
+  </p>
+
+  <h1 class="text-4xl font-black uppercase leading-tight text-white tracking-tight">
+    Your Bike<br />
+    Deserves<br />
+    <span class="text-[#ff4d00]">Expert Hands.</span>
+  </h1>
+
+  <div class="w-10 h-0.5 bg-[#ff4d00] my-5"></div>
+
+  <p class="text-sm text-gray-400 leading-relaxed max-w-xs">
+    {SITE.tagline}. I come to you, or you come to my workshop.
+  </p>
+
+  <div class="flex gap-3 mt-7">
+    <a
+      href="#contact"
+      class="bg-[#ff4d00] text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors"
+    >
+      Get in Touch
+    </a>
+    <a
+      href="#services"
+      class="border border-gray-600 text-gray-400 px-5 py-2.5 rounded-sm text-xs font-semibold uppercase tracking-widest hover:border-gray-400 transition-colors"
+    >
+      See Services ↓
+    </a>
+  </div>
+</section>

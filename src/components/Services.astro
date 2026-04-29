@@ -1,0 +1,46 @@
+---
+const services = [
+  {
+    icon: '🔧',
+    title: 'Repairs & Tune-ups',
+    description: 'Full diagnostics, brakes, gears, wheels — everything your bike needs.',
+    accent: 'orange',
+  },
+  {
+    icon: '⚙️',
+    title: 'Custom Builds',
+    description: 'Upgrades, component swaps, and dream builds from the ground up.',
+    accent: 'dark',
+  },
+  {
+    icon: '🚨',
+    title: 'Emergency / Roadside',
+    description: "Stuck on your route? I'll come to you.",
+    accent: 'orange',
+  },
+  {
+    icon: '🏠',
+    title: 'Mobile or Workshop',
+    description: 'Your place or my workshop — whatever works best for you.',
+    accent: 'dark',
+  },
+];
+---
+
+<section id="services" class="px-7 py-14 bg-[#f7f7f7]">
+  <p class="text-xs uppercase tracking-[3px] text-[#ff4d00] mb-1.5">What I Do</p>
+  <h2 class="text-2xl font-black uppercase text-[#111] mb-8">Services</h2>
+
+  <div class="grid grid-cols-2 gap-3">
+    {services.map((s) => (
+      <div
+        data-service
+        class={`bg-white p-4 border-l-[3px] ${s.accent === 'orange' ? 'border-[#ff4d00]' : 'border-[#111]'}`}
+      >
+        <span class="text-xl">{s.icon}</span>
+        <h3 class="text-xs font-bold uppercase text-[#111] mt-1.5">{s.title}</h3>
+        <p class="text-xs text-gray-500 mt-1 leading-relaxed">{s.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
