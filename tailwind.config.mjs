@@ -6,6 +6,9 @@ export default {
       colors: {
         orange: '#ff4d00',
       },
+      fontFamily: {
+        display: ['"Fraunces"', 'Georgia', 'serif'],
+      },
     },
   },
   plugins: [],

@@ -2,35 +2,70 @@
 import { SITE } from '../config';
 ---
 
-<section id="hero" class="bg-[#111] px-7 py-16 relative overflow-hidden">
-  <p class="text-xs uppercase tracking-[3px] text-[#ff4d00] mb-3">
-    {SITE.location} · Mobile &amp; Workshop
-  </p>
+<section id="hero" class="bg-[#111] px-7 py-16 relative overflow-hidden min-h-[85svh] flex flex-col justify-center">
 
-  <h1 class="text-4xl font-black uppercase leading-tight text-white tracking-tight">
-    Your Bike<br />
-    Deserves<br />
-    <span class="text-[#ff4d00]">Expert Hands.</span>
-  </h1>
+  <svg class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true">
+    <filter id="hero-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#hero-grain)" opacity="0.09"/>
+  </svg>
 
-  <div class="w-10 h-0.5 bg-[#ff4d00] my-5"></div>
+  <svg
+    class="absolute right-[-60px] bottom-[-60px] opacity-[0.07] pointer-events-none select-none"
+    width="340" height="340" viewBox="0 0 320 320" fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <circle cx="160" cy="160" r="152" stroke="#ff4d00" stroke-width="5"/>
+    <circle cx="160" cy="160" r="115" stroke="#ff4d00" stroke-width="2"/>
+    <circle cx="160" cy="160" r="18" stroke="#ff4d00" stroke-width="4"/>
+    <circle cx="160" cy="160" r="7" fill="#ff4d00"/>
+    <line x1="178" y1="160" x2="275" y2="160" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="176" y1="169" x2="260" y2="218" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="169" y1="176" x2="218" y2="260" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="160" y1="178" x2="160" y2="275" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="151" y1="176" x2="103" y2="260" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="144" y1="169" x2="60" y2="218" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="142" y1="160" x2="45" y2="160" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="144" y1="151" x2="60" y2="103" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="151" y1="144" x2="103" y2="60" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="160" y1="142" x2="160" y2="45" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="169" y1="144" x2="218" y2="60" stroke="#ff4d00" stroke-width="1.5"/>
+    <line x1="176" y1="151" x2="260" y2="103" stroke="#ff4d00" stroke-width="1.5"/>
+  </svg>
 
-  <p class="text-sm text-gray-400 leading-relaxed max-w-xs">
-    {SITE.tagline}. I come to you, or you come to my workshop.
-  </p>
+  <div class="relative z-10 text-center">
+    <p class="text-xs uppercase tracking-[3px] text-[#ff4d00] mb-3">
+      {SITE.location} · Mobile &amp; Workshop
+    </p>
 
-  <div class="flex gap-3 mt-7">
-    <a
-      href="#contact"
-      class="bg-[#ff4d00] text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors"
-    >
-      Get in Touch
-    </a>
-    <a
-      href="#services"
-      class="border border-gray-600 text-gray-400 px-5 py-2.5 rounded-sm text-xs font-semibold uppercase tracking-widest hover:border-gray-400 transition-colors"
-    >
-      See Services ↓
-    </a>
+    <h1 class="font-display text-5xl font-black leading-[1.05] text-white">
+      Your Bike<br />
+      Deserves<br />
+      <span class="text-[#ff4d00]">Expert Hands.</span>
+    </h1>
+
+    <div class="w-10 h-0.5 bg-[#ff4d00] my-5 mx-auto"></div>
+
+    <p class="text-sm text-gray-400 leading-relaxed max-w-xs mx-auto">
+      {SITE.tagline}. I come to you, or you come to my workshop.
+    </p>
+
+    <div class="flex gap-3 mt-7 justify-center">
+      <a
+        href="#contact"
+        class="bg-[#ff4d00] text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase tracking-widest hover:bg-orange-600 transition-colors"
+      >
+        Get in Touch
+      </a>
+      <a
+        href="#services"
+        class="border border-gray-600 text-gray-400 px-5 py-2.5 rounded-sm text-xs font-semibold uppercase tracking-widest hover:border-gray-400 transition-colors"
+      >
+        See Services ↓
+      </a>
+    </div>
   </div>
 </section>
