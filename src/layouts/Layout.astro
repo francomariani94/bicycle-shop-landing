@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = "Fran's Bike Atelier",
-  description = "Your neighborhood bicycle mechanic — repairs, tune-ups, custom builds, and emergency roadside help.",
+  title = "Kuruwa Cycles",
+  description = "Honest bike care, one ride at a time.",
 } = Astro.props;
 ---
 
@@ -22,9 +22,9 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-[#f7f7f7] text-[#111] font-sans">
+  <body class="bg-white text-fg-primary font-body">
     <slot />
   </body>
 </html>
