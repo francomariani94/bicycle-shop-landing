@@ -26,3 +26,6 @@ pnpm-debug.log*
 .superpowers/
 test-results/
 playwright-report/
+
+# design files
+.pen

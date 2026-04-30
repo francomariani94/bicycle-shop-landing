@@ -1,0 +1,1217 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "c3cnK",
+      "x": 200,
+      "y": 0,
+      "name": "Landing Page",
+      "width": 1440,
+      "fill": "$surface-primary",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IqCbC",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": 900,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "images/generated-1777548324583.png",
+            "mode": "fill"
+          },
+          "layout": "vertical",
+          "padding": [
+            40,
+            64,
+            64,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FNWLs",
+              "name": "nav",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gmdsG",
+                  "name": "logo",
+                  "fill": "$fg-inverse",
+                  "content": "KURUWA CYCLES",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "Ihk3t",
+                  "name": "navLinks",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5QoOJ",
+                      "name": "link1",
+                      "fill": "$fg-inverse",
+                      "content": "SERVICES",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "z49C0",
+                      "name": "link2",
+                      "fill": "$fg-inverse",
+                      "content": "ABOUT",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "gfSDK",
+                      "name": "link3",
+                      "fill": "$fg-inverse",
+                      "content": "BOOK NOW",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mZROf",
+              "name": "bottomContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ToJB4",
+                  "name": "headline",
+                  "fill": "$fg-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "YOUR BIKE\nDESERVES CARE",
+                  "lineHeight": 0.9,
+                  "fontFamily": "Anton",
+                  "fontSize": 120,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "kvhCv",
+                  "name": "subContent",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "N4EhI",
+                      "name": "subtitle",
+                      "fill": "$fg-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I fix bikes the way I'd want mine fixed — with patience, honesty, and real attention to detail.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vNdVL",
+                      "name": "ctaBtn",
+                      "fill": "$fg-accent",
+                      "padding": [
+                        16,
+                        32
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Xw1kQ",
+                          "name": "ctaText",
+                          "fill": "$fg-inverse",
+                          "content": "GET IN TOUCH",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 13,
+                          "fontWeight": "500",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bO1zq",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            80,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ohXpZ",
+              "name": "sectionLabel",
+              "fill": "$fg-secondary",
+              "content": "SERVICES",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "eD2lK",
+              "name": "sectionHeadline",
+              "fill": "$fg-primary",
+              "content": "HOW CAN I HELP?",
+              "lineHeight": 0.95,
+              "fontFamily": "Anton",
+              "fontSize": 80,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "efNWh",
+              "name": "cardsRow",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zNHNb",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "wU4kJ",
+                      "name": "icon1",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "wrench",
+                      "iconFontFamily": "lucide",
+                      "fill": "$fg-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UUWyU",
+                      "name": "title1",
+                      "fill": "$fg-primary",
+                      "content": "TUNE-UP",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "CfpZ6",
+                      "name": "desc1",
+                      "fill": "$fg-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Shifts not feeling right? Brakes squeaking? I'll go through everything and get your ride feeling smooth again.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L7YYr",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "7ZHCI",
+                      "name": "icon2",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "refresh-cw",
+                      "iconFontFamily": "lucide",
+                      "fill": "$fg-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MIRiK",
+                      "name": "title2",
+                      "fill": "$fg-primary",
+                      "content": "RESTORATION",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "auC56",
+                      "name": "desc2",
+                      "fill": "$fg-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Got an old bike collecting dust? I love bringing them back to life — cleaning, rebuilding, and making them rideable again.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d2eHH",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    32,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "pn8OU",
+                      "name": "icon3",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "settings",
+                      "iconFontFamily": "lucide",
+                      "fill": "$fg-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k4SmW",
+                      "name": "title3",
+                      "fill": "$fg-primary",
+                      "content": "CUSTOM BUILD",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "B62jw",
+                      "name": "desc3",
+                      "fill": "$fg-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Want something built just for you? I'll help pick the right parts and put it all together, piece by piece.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "4d7QT",
+          "name": "Philosophy Section",
+          "width": "fill_container",
+          "fill": "$surface-warm",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "z2lcg",
+              "name": "labelRow",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Zlj95",
+                  "fill": "$fg-secondary",
+                  "content": "MY APPROACH",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "line",
+                  "id": "XMRq3",
+                  "width": 900,
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "$fg-secondary"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FjIJW",
+              "name": "headlineWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vEf9c",
+                  "fill": "$fg-primary",
+                  "content": "EVERY BIKE",
+                  "lineHeight": 0.9,
+                  "fontFamily": "Anton",
+                  "fontSize": 120,
+                  "fontWeight": "normal",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "ZERg2",
+                  "fill": "$fg-primary",
+                  "content": "IS PERSONAL",
+                  "lineHeight": 0.9,
+                  "fontFamily": "Anton",
+                  "fontSize": 120,
+                  "fontWeight": "normal",
+                  "letterSpacing": -2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HbiiH",
+              "name": "contentRow",
+              "width": "fill_container",
+              "gap": 80,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k3564",
+                  "name": "leftCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PPWSp",
+                      "fill": "$fg-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I treat every bike that comes through my door the way I’d want mine treated. No rushing, no cutting corners. I take my time, I pay attention, and I make sure everything feels right before it goes back to you.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3Z8as",
+                      "fill": "$fg-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Whether it’s your daily commuter or something you’ve had in the garage for years — it gets the same care. I’m not the fastest shop in town, but I’ll make sure it’s done right.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GLibL",
+                  "name": "rightCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zbahO",
+                      "name": "imgFrame",
+                      "width": "fill_container",
+                      "height": 360,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "images/generated-1777548305835.png",
+                        "mode": "fill"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t3owG",
+                      "name": "statRow",
+                      "width": "fill_container",
+                      "gap": 40,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iPXiS",
+                          "name": "stat1",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "HUEvm",
+                              "fill": "$fg-primary",
+                              "content": "EVERY",
+                              "fontFamily": "Anton",
+                              "fontSize": 36,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Apl04",
+                              "fill": "$fg-secondary",
+                              "content": "BIKE MATTERS",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yew9a",
+                          "name": "stat2",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8xa4Z",
+                              "fill": "$fg-primary",
+                              "content": "NO",
+                              "fontFamily": "Anton",
+                              "fontSize": 36,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tNBQw",
+                              "fill": "$fg-secondary",
+                              "content": "SHORTCUTS",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Kgl4B",
+                          "name": "stat3",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "q0Ucm",
+                              "fill": "$fg-primary",
+                              "content": "REAL",
+                              "fontFamily": "Anton",
+                              "fontSize": 36,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "4VJf8",
+                              "fill": "$fg-secondary",
+                              "content": "CARE",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal",
+                              "letterSpacing": 2
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XYb6t",
+          "name": "Testimonials Section",
+          "width": "fill_container",
+          "fill": "$surface-primary",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "P9k5U",
+              "name": "testLabel",
+              "fill": "$fg-secondary",
+              "content": "FROM HAPPY RIDERS",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "aCBrM",
+              "name": "testHeadline",
+              "fill": "$fg-primary",
+              "content": "DON’T TAKE MY WORD FOR IT",
+              "fontFamily": "Anton",
+              "fontSize": 64,
+              "fontWeight": "normal",
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "3MSRk",
+              "name": "cardsRow",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "M4ZGA",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "$surface-warm",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LHC5Y",
+                      "fill": "$fg-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“He brought my old bike back from the dead. I honestly thought it was done for, but he took his time and now it rides better than when I bought it.”",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VlCkW",
+                      "name": "card1Author",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Huapr",
+                          "fill": "$fg-primary",
+                          "content": "MARCO T.",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mecnL",
+                          "fill": "$fg-secondary",
+                          "content": "Brought in a rusty road bike",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HWpQh",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "$surface-warm",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qzPv8",
+                      "fill": "$fg-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“Super fair price and he actually explained what was wrong instead of just handing me a bill. My commute has never felt smoother.”",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w6mCp",
+                      "name": "card2Author",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CXVPd",
+                          "fill": "$fg-primary",
+                          "content": "SARAH K.",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YBH9q",
+                          "fill": "$fg-secondary",
+                          "content": "Needed a full tune-up",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eXdT0",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "$surface-warm",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e2EI7",
+                      "fill": "$fg-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "“I wanted a gravel bike built just for me. He helped me pick every part, stayed in budget, and the result is exactly what I wanted.”",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "euvYN",
+                      "name": "card3Author",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sFlZS",
+                          "fill": "$fg-primary",
+                          "content": "DAVID L.",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "y9XDJ",
+                          "fill": "$fg-secondary",
+                          "content": "First custom build",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "g4yzG",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "fill": "$surface-dark",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "20EyY",
+              "fill": "$fg-secondary",
+              "content": "LET’S DO THIS",
+              "fontFamily": "Geist Mono",
+              "fontSize": 12,
+              "fontWeight": "normal",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "bhz3l",
+              "name": "ctaHeadWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XHwsf",
+                  "fill": "$fg-inverse",
+                  "content": "BRING YOUR",
+                  "lineHeight": 0.9,
+                  "fontFamily": "Anton",
+                  "fontSize": 140,
+                  "fontWeight": "normal",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "SNy0N",
+                  "fill": "$fg-inverse",
+                  "content": "BIKE OVER",
+                  "lineHeight": 0.9,
+                  "fontFamily": "Anton",
+                  "fontSize": 140,
+                  "fontWeight": "normal",
+                  "letterSpacing": -3
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "sbgwE",
+              "fill": "$fg-secondary",
+              "content": "Drop it off, tell me what’s bugging you, and I’ll take care of the rest.",
+              "lineHeight": 1.6,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "yNOHm",
+              "name": "ctaBtnRow",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FRQsl",
+                  "name": "ctaBtn",
+                  "fill": "$fg-accent",
+                  "padding": [
+                    18,
+                    48
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Cr5bJ",
+                      "fill": "$fg-inverse",
+                      "content": "GET IN TOUCH",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ACSd1",
+                  "name": "ctaBtn2",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$fg-inverse"
+                  },
+                  "padding": [
+                    18,
+                    48
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2gkdJ",
+                      "fill": "$fg-inverse",
+                      "content": "SEND A MESSAGE",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 14,
+                      "fontWeight": "500",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "line",
+              "id": "QDdXT",
+              "width": "fill_container",
+              "height": 0,
+              "stroke": {
+                "align": "center",
+                "thickness": 1,
+                "fill": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "C2iFO",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$surface-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            40,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "24nrs",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XPTBI",
+                  "name": "footerLeft",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LZlOw",
+                      "fill": "$fg-inverse",
+                      "content": "KURUWA CYCLES",
+                      "fontFamily": "Anton",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dj0tj",
+                      "fill": "$fg-secondary",
+                      "content": "Honest bike care, one ride at a time",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZYXep",
+                  "name": "footerMid",
+                  "gap": 64,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ooavY",
+                      "name": "footerCol1",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8tNgj",
+                          "fill": "$fg-secondary",
+                          "content": "NAVIGATE",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "dqZuO",
+                          "fill": "$fg-inverse",
+                          "content": "Services",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bhmLA",
+                          "fill": "$fg-inverse",
+                          "content": "About",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LiBPT",
+                          "fill": "$fg-inverse",
+                          "content": "Book Now",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "v4pRM",
+                      "name": "footerCol2",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eNvAa",
+                          "fill": "$fg-secondary",
+                          "content": "CONNECT",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "VoOps",
+                          "fill": "$fg-inverse",
+                          "content": "Instagram",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pDY6U",
+                          "fill": "$fg-inverse",
+                          "content": "Email",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gw9C0",
+                          "fill": "$fg-inverse",
+                          "content": "Location",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FsnZZ",
+                  "name": "footerRight",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mxa8o",
+                      "fill": "$fg-secondary",
+                      "content": "HOURS",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "J8FGw",
+                      "fill": "$fg-inverse",
+                      "content": "Tue – Sat: 9AM – 6PM",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MoO6w",
+                      "fill": "$fg-inverse",
+                      "content": "Sun – Mon: Closed",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "line",
+              "id": "BtFbJ",
+              "name": "footerDivider",
+              "width": "fill_container",
+              "height": 0,
+              "stroke": {
+                "align": "center",
+                "thickness": 1,
+                "fill": "#333333"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "b0aUQ",
+              "name": "footerBottom",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0IoXI",
+                  "fill": "$fg-secondary",
+                  "content": "© 2026 Kuruwa Cycles. All rights reserved.",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "sUPjV",
+                  "fill": "$fg-secondary",
+                  "content": "Made with care",
+                  "fontFamily": "Geist Mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "fg-accent": {
+      "type": "color",
+      "value": "#C8372D"
+    },
+    "fg-inverse": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "fg-primary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "fg-secondary": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "spacing-2xl": {
+      "type": "number",
+      "value": 120
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 48
+    },
+    "spacing-md": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing-sm": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing-xl": {
+      "type": "number",
+      "value": 80
+    },
+    "spacing-xs": {
+      "type": "number",
+      "value": 8
+    },
+    "surface-dark": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "surface-primary": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "surface-warm": {
+      "type": "color",
+      "value": "#F5F3F0"
+    }
+  }
+}
