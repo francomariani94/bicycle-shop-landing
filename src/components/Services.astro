@@ -1,45 +1,33 @@
 ---
 const services = [
   {
-    icon: '🔧',
-    title: 'Repairs & Tune-ups',
-    description: 'Full diagnostics, brakes, gears, wheels — everything your bike needs.',
-    accent: 'orange',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
+    title: 'TUNE-UP',
+    description: "Shifts not feeling right? Brakes squeaking? I'll go through everything and get your ride feeling smooth again.",
   },
   {
-    icon: '⚙️',
-    title: 'Custom Builds',
-    description: 'Upgrades, component swaps, and dream builds from the ground up.',
-    accent: 'dark',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>`,
+    title: 'RESTORATION',
+    description: "Got an old bike collecting dust? I love bringing them back to life — cleaning, rebuilding, and making them rideable again.",
   },
   {
-    icon: '🚨',
-    title: 'Emergency / Roadside',
-    description: "Stuck on your route? I'll come to you.",
-    accent: 'orange',
-  },
-  {
-    icon: '🏠',
-    title: 'Mobile or Workshop',
-    description: 'Your place or my workshop — whatever works best for you.',
-    accent: 'dark',
+    icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>`,
+    title: 'CUSTOM BUILD',
+    description: "Want something built just for you? I'll help pick the right parts and put it all together, piece by piece.",
   },
 ];
 ---
 
-<section id="services" class="px-7 py-14 bg-[#f7f7f7]">
-  <p class="text-xs uppercase tracking-[3px] text-[#ff4d00] mb-1.5">What I Do</p>
-  <h2 class="font-display text-3xl font-black text-[#111] mb-8">Services</h2>
+<section id="services" class="bg-white px-[120px] py-20">
+  <p class="font-mono text-xs text-fg-secondary tracking-[3px] mb-16">SERVICES</p>
+  <h2 class="font-display text-[80px] leading-[0.95] text-fg-primary mb-16">HOW CAN I HELP?</h2>
 
-  <div class="grid grid-cols-2 gap-3">
+  <div class="grid grid-cols-3 gap-12">
     {services.map((s) => (
-      <div
-        data-service
-        class={`bg-white p-4 border-l-[3px] ${s.accent === 'orange' ? 'border-[#ff4d00]' : 'border-[#111]'}`}
-      >
-        <span class="text-xl">{s.icon}</span>
-        <h3 class="text-xs font-bold uppercase text-[#111] mt-1.5">{s.title}</h3>
-        <p class="text-xs text-gray-500 mt-1 leading-relaxed">{s.description}</p>
+      <div class="flex flex-col gap-5 py-8">
+        <div class="text-fg-primary" set:html={s.icon} />
+        <h3 class="font-body text-lg font-semibold text-fg-primary tracking-[1px]">{s.title}</h3>
+        <p class="font-body text-[15px] text-fg-secondary leading-relaxed">{s.description}</p>
       </div>
     ))}
   </div>
