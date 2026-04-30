@@ -1,8 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('footer shows brand name and location', async ({ page }) => {
+test('footer is visible', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('footer')).toBeVisible();
+});
+
+test('footer has brand and copyright', async ({ page }) => {
   await page.goto('/');
   const footer = page.locator('footer');
-  await expect(footer).toBeVisible();
-  await expect(footer).toContainText("Fran's Bike Atelier");
+  await expect(footer).toContainText('KURUWA CYCLES');
+  await expect(footer).toContainText('All rights reserved');
 });

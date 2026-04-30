@@ -1,12 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test('nav shows brand name', async ({ page }) => {
+test('nav has brand name', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('nav')).toContainText("Fran's Bike");
-  await expect(page.locator('nav')).toContainText('Atelier');
+  await expect(page.locator('nav')).toContainText('KURUWA CYCLES');
 });
 
-test('nav has anchor links to page sections', async ({ page }) => {
+test('nav has navigation links', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('nav a[href="#services"]')).toBeVisible();
   await expect(page.locator('nav a[href="#about"]')).toBeVisible();
