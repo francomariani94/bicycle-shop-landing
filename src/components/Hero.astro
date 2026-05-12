@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/hero.jpg';
 import { SITE } from '../config';
 
 const whatsappUrl = `https://wa.me/${SITE.whatsappNumber}`;
@@ -6,7 +8,7 @@ const whatsappUrl = `https://wa.me/${SITE.whatsappNumber}`;
 
 <section id="hero" class="relative min-h-screen flex flex-col justify-between overflow-hidden">
   <div class="absolute inset-0 z-0">
-    <img src="/hero.jpg" alt="" class="w-full h-full object-cover" aria-hidden="true" />
+    <Image src={heroImage} alt="" widths={[640, 1024, 1408]} sizes="100vw" class="w-full h-full object-cover" loading="eager" aria-hidden="true" />
     <div class="absolute inset-0 bg-black/40"></div>
   </div>
 
