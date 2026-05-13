@@ -9,5 +9,5 @@ test('CTA section has action buttons', async ({ page }) => {
   await page.goto('/');
   const section = page.locator('section#contact');
   await expect(section).toContainText('GET IN TOUCH');
-  await expect(section).toContainText('SEND A MESSAGE');
+  await expect(section).toContainText('SEND AN EMAIL');
 });
