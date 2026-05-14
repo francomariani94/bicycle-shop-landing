@@ -1,8 +1,54 @@
-<nav class="absolute top-0 left-0 right-0 z-50 px-6 py-6 md:px-16 md:py-10 flex justify-between items-center">
+<nav aria-label="Main navigation" class="absolute top-0 left-0 right-0 z-50 px-6 py-6 md:px-16 md:py-10 flex justify-between items-center">
   <span class="font-mono text-xs md:text-sm font-medium text-white tracking-[3px]">KURUWA CYCLES</span>
-  <div class="flex items-center gap-4 md:gap-8">
-    <a href="#services" class="font-mono text-[10px] md:text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">SERVICES</a>
-    <a href="#about" class="font-mono text-[10px] md:text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">ABOUT</a>
-    <a href="#contact" class="font-mono text-[10px] md:text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">BOOK NOW</a>
+
+  <!-- Desktop links -->
+  <div class="hidden md:flex items-center gap-8">
+    <a href="#services" class="font-mono text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">SERVICES</a>
+    <a href="#about" class="font-mono text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">ABOUT</a>
+    <a href="#contact" class="font-mono text-xs text-white tracking-[2px] hover:opacity-70 transition-opacity">BOOK NOW</a>
   </div>
+
+  <!-- Mobile menu button -->
+  <button
+    id="menu-toggle"
+    type="button"
+    class="md:hidden text-white"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+    aria-label="Open menu"
+  >
+    <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
 </nav>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-surface-dark/95 flex flex-col items-center justify-center gap-8 hidden md:hidden" aria-hidden="true">
+  <a href="#services" class="mobile-menu-link font-mono text-sm text-white tracking-[3px] hover:opacity-70 transition-opacity">SERVICES</a>
+  <a href="#about" class="mobile-menu-link font-mono text-sm text-white tracking-[3px] hover:opacity-70 transition-opacity">ABOUT</a>
+  <a href="#contact" class="mobile-menu-link font-mono text-sm text-white tracking-[3px] hover:opacity-70 transition-opacity">BOOK NOW</a>
+</div>
+
+<script>
+  const toggle = document.getElementById('menu-toggle')!;
+  const menu = document.getElementById('mobile-menu')!;
+  const iconOpen = document.getElementById('icon-open')!;
+  const iconClose = document.getElementById('icon-close')!;
+  const links = menu.querySelectorAll('.mobile-menu-link');
+
+  function setOpen(open: boolean) {
+    menu.classList.toggle('hidden', !open);
+    menu.setAttribute('aria-hidden', String(!open));
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+  }
+
+  toggle.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    setOpen(!isOpen);
+  });
+
+  links.forEach((link) => link.addEventListener('click', () => setOpen(false)));
+</script>

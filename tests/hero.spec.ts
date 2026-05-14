@@ -7,5 +7,5 @@ test('hero section is visible', async ({ page }) => {
 
 test('hero has CTA button', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('section#hero a[href="#contact"]')).toBeVisible();
+  await expect(page.locator('section#hero a[href^="https://wa.me/"]')).toBeVisible();
 });
