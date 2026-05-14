@@ -51,7 +51,7 @@ const ogImageUrl = new URL(ogImage, Astro.site ?? Astro.url).href;
       Skip to content
     </a>
     <slot />
-    <script>
+    <script is:inline>
       document.addEventListener('DOMContentLoaded', () => {
         const observer = new IntersectionObserver(
           (entries) => {
