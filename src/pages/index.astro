@@ -6,11 +6,13 @@ import Services from '../components/Services.astro';
 import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <Layout>
   <Nav />
   <main>
+    <Analytics />
     <Hero />
     <Services />
     <About />
